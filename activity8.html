@@ -1,0 +1,102 @@
+<html>
+ <head>
+<Script language="JAVASCRIPT">
+		function u1()
+		{
+			var a=f.textname.value;
+			if(a=="")
+			{
+				alert("please enter username");
+			}
+			
+		}
+                function u()
+		{
+			var b=f.password.value;
+			if(b=="")
+			{
+				alert("please enter the password");
+			}
+		}
+                function u3()
+		{
+			var a1=f.textname.value;
+			var a2=f.password.value;
+			document.write(a1);
+			document.write(a2); 
+                } 
+			
+</script> 
+<style> ul {
+list-style-type:none;
+} 
+body {
+            margin:50px;
+            padding:30px;
+            background-image: url("img.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+form
+{   background-color: #dcdcdc;
+
+
+ } 
+</style> 
+</head> 
+  <body>
+
+<form name="f">
+  <div cellpadding="2" width="20%" bgcolor="99FFFF" align="center" cellspacing="2">  
+ <ul>
+ <li>
+ <center><font size=4><b>Form Validation</b>
+</font>
+</center>
+ </li>
+ </ul> 
+ <ul>
+ <li>Username Name</li>
+ <li><input type="text" name="textname" id="textname" size="30"></li> 
+</ul> 
+    <ul>
+ <li> Password</li>
+ <li><input type="Password" name="password" id="password"  onfocusin="u1()"size="30"></li> 
+</ul> 
+   <ul>
+ <li>Confirm Password</li> 
+<li><input type=" confirm password" name="confirm password" id="confirm password"  onfocusin="u()" size="30"></li> 
+</ul> 
+<ul> 
+    <li>Date Of Birth</li> 
+    <li><input type="date" id="dob" name="dob" max="20010-12-31" required  size="30"></li>
+ </ul>  
+<ul>
+ <li>Gender</li> 
+<li>
+<input type="radio" name="sex" value="male" size="10">Male 
+<input type="radio" name="sex" value="Female" size="10">Female</li> 
+</ul>  
+ <ul>
+ <li>Hobbies</li>
+ <li><select name="Hobbies"> 
+<option value="-1" selected>select..</option> 
+<option value="Singing">Singing</option>
+ <option value="Playing Games">Playing Games</option> 
+<option value="Dancing">Dancing</option> 
+<option value="Speaking">Speaking</option> 
+</select></li>
+ </ul>  
+   <ul>
+ <li>Feedback</li> 
+<li><input type="text" name="Feedback" id="Feedback"  required size="30"></li>  
+ </ul>
+  <ul>
+ <li><input type="reset"></li> 
+<li colspan="2"><input type="submit" value="Submit Form" /></li> 
+</ul>
+ </div>
+ </form>
+ </body>
+ </html>
